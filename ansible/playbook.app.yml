@@ -1,0 +1,8 @@
+---
+- name: "install database for storing selinux data"
+  hosts: selinux_db
+  tasks:
+  - name: "SElinux manager database"
+    include_role:
+      name: selinux_db
+  become: true

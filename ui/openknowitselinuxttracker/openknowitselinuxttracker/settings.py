@@ -20,23 +20,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ngukdx=2clv!w%8m!%w&jr%z9wuf5ufx_(uwfq3uuy4ynpx531'
+SECRET_KEY = 'f(9yam@s*#4^@45kcv&^3pz%r8zzl*93w-)+dffj)3zefk)ghj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [0.0.0.0]
+ALLOWED_HOSTS = ["ku-selinux.openknowit.com", "FAD1005923.unicph.domain", "127.0.0.1"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'tracker.apps.TrackerConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_tables2',
 ]
 
 MIDDLEWARE = [
@@ -75,11 +77,14 @@ WSGI_APPLICATION = 'openknowitselinuxttracker.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'selinux',
+        'USER': 'selinux',
+        'PASSWORD': 'ixj90j2s',
+        'HOST': '127.0.0.1',
+        'PORT': 5432
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

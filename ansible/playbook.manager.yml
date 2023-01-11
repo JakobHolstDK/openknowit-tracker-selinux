@@ -1,0 +1,8 @@
+---
+- name: "Analyze logfiles"
+  hosts: selinux_manager
+  tasks:
+  - name: "SElinux manager"
+    include_role:
+      name: selinux_manager
+  become: true

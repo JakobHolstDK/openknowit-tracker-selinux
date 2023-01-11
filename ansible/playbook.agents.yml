@@ -1,0 +1,8 @@
+---
+- name: "Collect auditlogs"
+  hosts: selinux_agent
+  tasks:
+  - name: "SElinux agent"
+    include_role:
+      name: selinux_agent
+  become: true
