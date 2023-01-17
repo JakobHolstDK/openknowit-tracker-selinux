@@ -1,8 +1,8 @@
 ---
-- name: "install database for storing selinux data"
-  hosts: selinux_db
+- name: "install the selinux app server
+  hosts: selinux_app
   tasks:
-  - name: "SElinux manager database"
+  - name: "SElinux manager ap server"
     include_role:
-      name: selinux_db
+      name: selinux_app
   become: true
