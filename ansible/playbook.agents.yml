@@ -1,6 +1,8 @@
 ---
 - name: "Collect auditlogs"
   hosts: selinux_agent
+  vars:
+    ansible_remote_tmp: /tmp
   tasks:
   - name: "SElinux agent"
     include_role:

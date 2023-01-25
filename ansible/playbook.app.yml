@@ -1,5 +1,5 @@
 ---
-- name: "install the selinux app server
+- name: "install the selinux app server"
   hosts: selinux_app
   tasks:
   - name: "SElinux manager ap server"

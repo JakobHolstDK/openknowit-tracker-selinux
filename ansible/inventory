@@ -2,8 +2,14 @@
 thinlinapp01fl.unicph.domain
 thinlinapp02fl.unicph.domain
 thinlinapp03fl.unicph.domain
-130.225.251.177
-130.225.251.54 
+baldrweb01fl.unicph.domain
+bioweb02fl.unicph.domain
+ilfgridgpun01fl.unicph.domain
+riteshead01fl.unicph.domain
+ritesgpu01fl.unicph.domain
+ritesgpu02fl.unicph.domain
+
+
 
 [selinux_manager]
 selinuxapp01fl.unicph.domain
@@ -13,6 +19,7 @@ selinuxapp01fl.unicph.domain
 
 [selinux_db]
 selinuxdb01fl.unicph.domain
+selinuxapp01fl.unicph.domain
 
 [selinux_web]
 selinuxweb01fl.unicph.domain
